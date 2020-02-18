@@ -2,5 +2,7 @@
 /dist
 /.vscode
 /.cache
+/src/.cache
+/src/dist
 *.DS_Store
 
