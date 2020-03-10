@@ -12,12 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
+    "boba": "^1.7.2",
     "cssnano": "^4.1.10",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "postcss-modules": "^1.5.0",
     "sass": "^1.25.0"
-  },
-  "dependencies": {
-    "boba": "^1.7.2"
   }
 }
