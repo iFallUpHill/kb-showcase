@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "dev": "parcel !./src/kb_partials/*.html ./src/**/*.html",
+    "dev": "parcel ./src/**/*.html",
     "build": "parcel build ./src/**/*.html --no-source-maps"
   },
   "keywords": [],

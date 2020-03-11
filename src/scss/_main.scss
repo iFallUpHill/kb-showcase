@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background: #008080;
+}
+
+.container {
+    padding: 2em 0;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
 }
