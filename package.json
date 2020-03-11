@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "dev": "parcel ./src/**/*.html",
+    "dev": "parcel !./src/kb_partials/*.html ./src/**/*.html",
     "build": "parcel build ./src/**/*.html --no-source-maps"
   },
   "keywords": [],
@@ -12,10 +12,12 @@
   "license": "ISC",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
-    "boba": "^1.7.2",
     "cssnano": "^4.1.10",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "postcss-modules": "^1.5.0",
     "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "modern-normalize": "^0.6.0"
   }
 }
