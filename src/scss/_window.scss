@@ -147,8 +147,6 @@
                 transform: translate(-50%, -50%) rotate(-45deg);
             }
         }
-
-
     }
 
     .window-content {
@@ -216,20 +214,26 @@
         margin-left: 0.5em;
         width: 100px;
         outline: none;
-        background: transparent;
+        background: #bdbebd;
+        position: relative;
         border-top: solid 1px #fff;
         border-left: solid 1px #fff;
-        border-right: solid 1px #000;
-        border-bottom: solid 1px #000;
-        box-shadow: -1px -1px 0px #777 inset, 1px 1px 0px #777, -1px -1px 0px #777;
+        border-right: solid 1px #413f42;
+        border-bottom: solid 1px #413f42;
+        box-shadow: -1px -1px 0px #817c78 inset;
+
         cursor: pointer;
 
         &:active {
-            border-bottom: solid 1px #fff;
             border-right: solid 1px #fff;
-            border-left: solid 1px #000;
-            border-top: solid 1px #000;
+            border-bottom: solid 1px #fff;
+            border-left: solid 1px #413f42;
+            border-top: solid 1px #413f42;
             box-shadow: none;
+
+            &:after {
+                border: none;
+            }
         }
     }
 }
