@@ -1,0 +1,70 @@
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+  opacity: 0;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #413f42;
+  box-shadow: inset -1px 0 0 0 #817c78;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-right: -4px;
+  color: #817c78;
+  margin-bottom: -2px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    bottom: -2px;
+    left: -2px;
+  }
+}
+
+.tabset > input:checked + label {
+  color: #000;
+  border-bottom: 2px solid #bdbebd;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 2px;
+    background: #817c78;
+    bottom: -2px;
+    box-shadow: inset -2px 0 0 0 #413f42;
+    right: -2px;
+  }
+}
+
+.tab-panel {
+  padding: 1em 2em;
+  margin-bottom: 0.5em;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #413f42;
+  border-bottom: solid 2px #413f42;
+  box-shadow: -1px -1px 0px #817c78 inset;
+}

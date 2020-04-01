@@ -1,87 +1,110 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/modern-normalize@0.6.0/modern-normalize.css" />
-        <link rel="stylesheet" type="text/css" href="./style.scss" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="window">
-                <div class="window-inner">
-                    <div class="window-header">
-                        <div class="window-header-left">
-                            <img class="window-header-program-icon" src="./images/ui/picture_icon.ico" />
-                            <p class="window-header-title">Title</p>
-                        </div>
-                        <div class="window-header-right">
-                            <button class="window-header-button">
-                                <div class="window-header-button-minimize"></div>
-                            </button>
-                            <button class="window-header-button">
-                                <div class="window-header-button-maximize"></div>
-                            </button>
-                            <button class="window-header-button">
-                                <div class="window-header-button-close"></div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="window-content">
-                        <div class="tabset">
-                            <input type="radio" name="tabset" id="tab1" aria-controls="keyboard1" checked />
-                            <label for="tab1">Keyboard 1</label>
-                            <input type="radio" name="tabset" id="tab2" aria-controls="keyboard2" />
-                            <label for="tab2">Keyboard 2</label>
-                            <input type="radio" name="tabset" id="tab3" aria-controls="keyboard3" />
-                            <label for="tab3">Keyboard 3</label>
-
-                            <div class="tab-panels">
-                                <section id="keyboard1" class="tab-panel">
-                                    <h2>K1</h2>
-                                    <p>
-                                        <strong>Overall Impression:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non placerat odio. Donec ut mattis ipsum, sit amet tempor erat. Praesent sit amet placerat nulla. Aenean massa sapien, vehicula nec lorem quis, tristique scelerisque purus. Curabitur interdum purus facilisis ante varius volutpat.
-                                    </p>
-                                </section>
-                                <section id="keyboard2" class="tab-panel">
-                                    <h2>K2</h2>
-                                    <p>
-                                        <strong>Overall Impression:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non placerat odio. Donec ut mattis ipsum, sit amet tempor erat. Praesent sit amet placerat nulla. Aenean massa sapien, vehicula nec lorem quis, tristique scelerisque purus. Curabitur interdum purus facilisis ante varius volutpat.
-                                    </p>
-                                </section>
-                                <section id="keyboard3" class="tab-panel">
-                                    <h2>K3</h2>
-                                    <p>
-                                        <strong>Overall Impression:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non placerat odio. Donec ut mattis ipsum, sit amet tempor erat. Praesent sit amet placerat nulla. Aenean massa sapien, vehicula nec lorem quis, tristique scelerisque purus. Curabitur interdum purus facilisis ante varius volutpat.
-                                    </p>
-                                </section>
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                        <div class="window-description-box">
-                            <div class="window-description-title">
-                                <p>Keyboard Information</p>
-                            </div>
-                            <div class="window-description-content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non placerat odio. Donec ut mattis
-                                    ipsum, sit amet tempor erat. Praesent sit amet placerat nulla. Aenean massa sapien, vehicula nec lorem
-                                    quis, tristique scelerisque purus. Curabitur interdum purus facilisis ante varius volutpat. Praesent
-                                    convallis eleifend velit, fringilla porttitor ligula lobortis quis. Vestibulum ultrices lacus sem, sit
-                                    amet commodo eros gravida eu. Morbi nec lectus neque. Nam lacinia sem porttitor, pharetra elit eget,
-                                    finibus dui. Mauris eu consectetur mi. Nunc ullamcorper ac arcu eget tincidunt. Duis dapibus, ipsum a
-                                    consequat sagittis, ligula tellus fringilla est, eu mollis risus dui sit amet lectus. Vivamus vitae
-                                    turpis placerat, laoreet arcu vitae, gravida est. Cras ante sem, eleifend in magna at, mattis faucibus
-                                    eros. Pellentesque imperdiet et nisl vitae vulputate. Sed at sagittis velit.
-                                </p>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="dialog-button-group">
-                            <button class="dialog-button">OK</button>
-                            <button class="dialog-button">Cancel</button>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/modern-normalize@0.6.0/modern-normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./style.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="window">
+        <div class="window-inner">
+          <div class="window-header">
+            <div class="window-header-left">
+              <img class="window-header-program-icon" src="./images/ui/picture_icon.ico" />
+              <p class="window-header-title">Title</p>
             </div>
+            <div class="window-header-right">
+              <button class="window-header-button">
+                <div class="window-header-button-minimize"></div>
+              </button>
+              <button class="window-header-button">
+                <div class="window-header-button-maximize"></div>
+              </button>
+              <button class="window-header-button">
+                <div class="window-header-button-close"></div>
+              </button>
+            </div>
+          </div>
+          <div class="window-content">
+            <div class="tabset">
+              <input type="radio" name="tabset" id="tab1" aria-controls="keyboard1" checked />
+              <label for="tab1">Keyboard 1</label>
+              <input type="radio" name="tabset" id="tab2" aria-controls="keyboard2" />
+              <label for="tab2">Keyboard 2</label>
+              <input type="radio" name="tabset" id="tab3" aria-controls="keyboard3" />
+              <label for="tab3">Keyboard 3</label>
+              <input type="radio" name="tabset" id="tab4" aria-controls="about" />
+              <label for="tab4">About</label>
+
+              <div class="tab-panels">
+                <section id="keyboard1" class="tab-panel">
+                  <div class="window-image">
+                    <img src="./images/1200x900.png" alt="photo of keyboard" />
+                  </div>
+                  <br />
+                  <div class="window-description-box">
+                    <div class="window-description-title">
+                      <p>Keyboard Information</p>
+                    </div>
+                    <div class="window-description-content">
+                      <p>Case: NK65 Aluminum</p>
+                      <p>PCB: NK65 v1.1</p>
+                      <p>Switches: Aqua Zilent V2s - 67g (Lubed with 3204)</p>
+                      <p>Stabilizers: Authentic Cherry Stabilizers (Clipped, Lubed with 205g0, and Bandaid Modded)</p>
+                      <p>Keycaps: EnjoyPBT Blank White PBT (Cherry) + NPKC Dark Blue Side-Printed PBT (OEM)</p>
+                    </div>
+                  </div>
+                </section>
+                <section id="keyboard2" class="tab-panel">
+                  <div class="window-image">
+                    <img src="./images/1200x900.png" alt="photo of keyboard" />
+                  </div>
+                  <br />
+                  <div class="window-description-box">
+                    <div class="window-description-title">
+                      <p>Keyboard Information</p>
+                    </div>
+                    <div class="window-description-content">
+                      <p>Case: GMMK TKL (Black)</p>
+                      <p>PCB: GMMK TKL 2019 Revision</p>
+                      <p>Switches: KBDFans T1s - 67g (Stock)</p>
+                      <p>Stabilizers: Authentic Cherry Stabilizers (Clipped, Lubed with 205g0)</p>
+                      <p>Keycaps: NPKC Rainbow Gradient Side-Printed PBT (OEM)</p>
+                    </div>
+                  </div>
+                </section>
+                <section id="keyboard3" class="tab-panel">
+                  <div class="window-image">
+                    <img src="./images/1200x900.png" alt="photo of keyboard" />
+                  </div>
+                  <br />
+                  <div class="window-description-box">
+                    <div class="window-description-title">
+                      <p>Keyboard Information</p>
+                    </div>
+                    <div class="window-description-content">
+                      <p>Case: Teamwolf Zhuque</p>
+                      <p>PCB: Teamwolf Zhuque</p>
+                      <p>Switches: Gateron Yellows (Stock)</p>
+                      <p>Stabilizers: Teamwolf Zhuque (Stock)</p>
+                      <p>Keycaps: KBDFans Blank Dolce PBT (OEM) </p>
+                    </div>
+                  </div>
+                </section>
+                <section id="about" class="tab-panel">
+                  <h2>About</h2>
+                  <p>
+                    <strong>Overall Impression:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non placerat odio. Donec ut mattis ipsum, sit amet tempor erat. Praesent sit amet placerat nulla. Aenean massa sapien, vehicula nec lorem quis, tristique scelerisque purus. Curabitur interdum purus facilisis ante varius volutpat.
+                  </p>
+                </section>
+              </div>
+            </div>
+            <iv class="dialog-button-group">
+              <button class="dialog-button">OK</button>
+              <button class="dialog-button">Cancel</button>
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
