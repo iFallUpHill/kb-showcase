@@ -17,5 +17,8 @@
     "postcss-modules": "^1.5.0",
     "sass": "^1.26.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lazysizes": "^5.2.0",
+    "parcel-plugin-lazy": "github:iFallUpHill/parcel-plugin-lazy#master"
+  }
 }

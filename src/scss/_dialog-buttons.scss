@@ -1,0 +1,35 @@
+.window {
+  .dialog-button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .dialog-button {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin-left: 0.5em;
+    width: 100px;
+    outline: none;
+    background: #bdbebd;
+    position: relative;
+    border-top: solid 1px #fff;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #413f42;
+    border-bottom: solid 1px #413f42;
+    box-shadow: -1px -1px 0px #817c78 inset;
+
+    cursor: pointer;
+
+    &:active {
+      border-right: solid 1px #fff;
+      border-bottom: solid 1px #fff;
+      border-left: solid 1px #413f42;
+      border-top: solid 1px #413f42;
+      box-shadow: none;
+
+      &:after {
+        border: none;
+      }
+    }
+  }
+}

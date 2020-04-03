@@ -1,7 +1,15 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mechanical Keyboard Showcase | Jason Manson-Hing</title>
+    
+    <meta name="description" content="A simple website to showcase my custom mechanical keyboards.">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/modern-normalize@0.6.0/modern-normalize.css" />
     <link rel="stylesheet" type="text/css" href="./style.scss" />
+
+    <script src="./scripts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -38,7 +46,9 @@
               <div class="tab-panels">
                 <section id="keyboard1" class="tab-panel">
                   <div class="window-image">
-                    <img src="./images/1200x900.png" alt="photo of keyboard" />
+                    <div class="mediabox">
+                      <img data-lowsrc="./images/keyboards/keyboard1_prev.jpg" data-srcset="./images/keyboards/keyboard1_full.jpg" alt="photo of keyboard1" class="mediabox-img lazyload"/>
+                    </div>
                   </div>
                   <br />
                   <div class="window-description-box">
@@ -56,7 +66,9 @@
                 </section>
                 <section id="keyboard2" class="tab-panel">
                   <div class="window-image">
-                    <img src="./images/1200x900.png" alt="photo of keyboard" />
+                    <div class="mediabox">
+                      <img data-lowsrc="./images/keyboards/keyboard2_prev.jpg" data-srcset="./images/keyboards/keyboard2_full.jpg" alt="photo of keyboard2" class="mediabox-img lazyload"/>
+                    </div>
                   </div>
                   <br />
                   <div class="window-description-box">
@@ -65,7 +77,7 @@
                     </div>
                     <div class="window-description-content">
                       <p>Case: GMMK TKL (Black)</p>
-                      <p>PCB: GMMK TKL 2019 Revision</p>
+                      <p>PCB: GMMK TKL 2018 Revision</p>
                       <p>Switches: KBDFans T1s - 67g (Stock)</p>
                       <p>Stabilizers: Authentic Cherry Stabilizers (Clipped, Lubed with 205g0)</p>
                       <p>Keycaps: NPKC Rainbow Gradient Side-Printed PBT (OEM)</p>
@@ -74,7 +86,9 @@
                 </section>
                 <section id="keyboard3" class="tab-panel">
                   <div class="window-image">
-                    <img src="./images/1200x900.png" alt="photo of keyboard" />
+                    <div class="mediabox">
+                      <img data-lowsrc="./images/keyboards/keyboard3_prev.jpg" data-srcset="./images/keyboards/keyboard3_full.jpg" data-sizes="auto" alt="photo of keyboard3" class="mediabox-img lazyload"/>
+                    </div>
                   </div>
                   <br />
                   <div class="window-description-box">
@@ -91,20 +105,24 @@
                   </div>
                 </section>
                 <section id="about" class="tab-panel">
-                  <h2>About</h2>
-                  <p>
-                    <strong>Overall Impression:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non placerat odio. Donec ut mattis ipsum, sit amet tempor erat. Praesent sit amet placerat nulla. Aenean massa sapien, vehicula nec lorem quis, tristique scelerisque purus. Curabitur interdum purus facilisis ante varius volutpat.
-                  </p>
+                  <div class="window-about-content">
+                    <p>Mechanical Keyboard Showcase</p>
+                    <p>Copyright (C) 2020 - <a href="https://jasonmh.me" target="_blank">Jason Manson-Hing</a></p>
+                    <br />
+                    <p>This website was created with:</p>
+                    <p>Pure HTML/CSS</p>
+                    <p>Images lazy-loaded with: </p>
+                  </div>
                 </section>
               </div>
             </div>
             <iv class="dialog-button-group">
-              <button class="dialog-button">OK</button>
-              <button class="dialog-button">Cancel</button>
-            </div>
+            <button class="dialog-button">OK</button>
+            <button class="dialog-button">Cancel</button>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
