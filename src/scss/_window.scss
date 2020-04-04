@@ -20,6 +20,7 @@
       display: flex;
       margin-left: 0.25em;
       align-items: center;
+      max-width: 70%
     }
 
     &-right {
@@ -42,6 +43,9 @@
     &-title {
       color: white;
       margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &-interaction-icon {
