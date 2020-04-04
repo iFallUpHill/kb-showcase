@@ -9,15 +9,13 @@
 }
 
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+.tabset > input:nth-child(2):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(4):checked ~ .tab-panels > .tab-panel:nth-child(4) {
   display: block;
 }
 
-.tabset > label {
+.tabset .label-group > label {
   position: relative;
   display: inline-block;
   padding: 0.25em 0.5em;
@@ -41,9 +39,54 @@
     bottom: -2px;
     left: -2px;
   }
+
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+
+    // desktop
+    @media only screen and (min-width: 414px) and (max-width: 434px) {
+      max-width: 68px;
+    }
+    @media only screen and (min-width: 390px) and (max-width: 413px) {
+      max-width: 60px;
+    }
+    @media only screen and (min-width: 369px) and (max-width: 389px) {
+      max-width: 53px;
+    }
+    @media only screen and (min-width: 342px) and (max-width: 368px) {
+      max-width: 44px;
+    }
+    @media only screen and (max-width: 341px) {
+      max-width: 37px;
+    }
+
+    // mobile
+    @media only screen and (min-device-width: 414px) and (max-device-width: 479px) {
+      max-width: 68px;
+    }
+    @media only screen and (min-device-width: 411px) and (max-device-width: 413px) {
+      max-width: 67px;
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 410px) {
+      max-width: 55px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
+      max-width: 50px;
+    }
+    @media only screen and (max-device-width: 359px) {
+      max-width: 37px;
+    }
+  }
 }
 
-.tabset > input:checked + label {
+
+.tabset > input:first-child:checked ~ .label-group > label:nth-of-type(1),
+.tabset > input:nth-child(2):checked ~ .label-group > label:nth-of-type(2),
+.tabset > input:nth-child(3):checked ~ .label-group > label:nth-of-type(3),
+.tabset > input:nth-child(4):checked ~ .label-group > label:nth-of-type(4) {
   color: #000;
   border-bottom: 2px solid #bdbebd;
 
