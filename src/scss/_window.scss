@@ -204,6 +204,11 @@
       .window-description-content {
         padding: 1em 1em 0.75em;
         line-height: 1.5;
+        p {
+          &:not(:last-child){
+            margin-bottom: 0.5em;
+          }
+        }
       }
     }
 
