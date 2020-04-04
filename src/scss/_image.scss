@@ -39,7 +39,7 @@
     filter: blur(10px);
     transform: scale(1.05);
     opacity: 1;
-    transition: opacity 1500ms, filter 1500ms, transform 1500ms ease-in;
+    transition: opacity 500ms, filter 500ms, transform 500ms ease-in;
   }
 
   .ls-blur-up-img.ls-inview.ls-original-loaded {
