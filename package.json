@@ -13,7 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "lazysizes": "^5.2.0",
+    "lazysizes": "^5.2.1",
     "parcel-plugin-lazy": "github:iFallUpHill/parcel-plugin-lazy#master",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "postcss-modules": "^1.5.0",
