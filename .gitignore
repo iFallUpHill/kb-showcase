@@ -6,3 +6,4 @@
 /src/dist
 *.DS_Store
 *.PSD
+.parcel-cache/
