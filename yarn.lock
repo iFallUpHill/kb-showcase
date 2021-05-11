@@ -938,12 +938,12 @@
     ora "^2.1.0"
     strip-ansi "^4.0.0"
 
-"@parcel/plugin@2.0.0-nightly.657+ba57b650":
-  version "2.0.0-nightly.657"
-  resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.0.0-nightly.657.tgz#3555965e6499f3c53c75450d3634f3ea119df6be"
-  integrity sha512-nA3LafkEPDvHJ4ipSxxJzg7P+ILh9zejPYj9ebrkoieX9Tb7KB3zGu2VSCGiWrw6wY+S8rsYXFPnpZeW4LFp3A==
+"@parcel/plugin@2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.0.0-beta.2.tgz#78de0725c9dfb010ccbf92fe39b1aafa960675e5"
+  integrity sha512-I89k7uc+yeSe6LrREajkvR6HnfcZzMDoz/TjnfG0W+iQYdKKaAuggf9zlQ6aOr8moGM1orcVSx5X+77u/tX0gg==
   dependencies:
-    "@parcel/types" "2.0.0-nightly.657+ba57b650"
+    "@parcel/types" "2.0.0-beta.2"
 
 "@parcel/source-map@2.0.0-alpha.4.21":
   version "2.0.0-alpha.4.21"
@@ -953,19 +953,19 @@
     node-addon-api "^3.0.0"
     node-gyp-build "^4.2.3"
 
-"@parcel/transformer-sass@^2.0.0-beta.2":
-  version "2.0.0-nightly.657"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-sass/-/transformer-sass-2.0.0-nightly.657.tgz#b1c491c6e5f7f72f78b8956bca7ac1a8d25f0f72"
-  integrity sha512-Xb599H4nzPBzfagGSZb75Yzj+zizpfL435rvTM5AqVnJvRfpQieX5iWzz3Srot2Nv548MCOh9qW/4sWDy2zj+w==
+"@parcel/transformer-sass@2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-sass/-/transformer-sass-2.0.0-beta.2.tgz#94a0afc37a2b2fe76e2be54cc331c2756918b25b"
+  integrity sha512-xJ21lbkSqq8p0+o6BMwE7BcyTmxq54QUW92KybdE5oP2Cc8DhP7vS/AdWsbl9L+6Gzf41SYIze8JCO+i5Ls6Rg==
   dependencies:
-    "@parcel/plugin" "2.0.0-nightly.657+ba57b650"
+    "@parcel/plugin" "2.0.0-beta.2"
     "@parcel/source-map" "2.0.0-alpha.4.21"
     sass "^1.32.4"
 
-"@parcel/types@2.0.0-nightly.657+ba57b650":
-  version "2.0.0-nightly.657"
-  resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.0.0-nightly.657.tgz#3599164bad7aba24ea1f0ff0e24d1e26b4b7f9bb"
-  integrity sha512-LUTOHf2Dm08M91VW/e5PgoJRme/frtbqL2c8ZNXdbnhj7P5Bp/FBSVoXfpSivu4hevYsEXzQ7QKzsCxSGOX/sQ==
+"@parcel/types@2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.0.0-beta.2.tgz#39530f885a546ccc8759ba8b970440bb7aadc146"
+  integrity sha512-ri2BPGAFDntQbA5p3m/4QgnEqWYToUMkAtLelXSPbwnTM0KARavTAwSRqz1xwTdXa8gQyv4SSV7xURwaPaZ3GA==
 
 "@parcel/utils@^1.11.0":
   version "1.11.0"
@@ -3669,6 +3669,11 @@ nan@^2.12.1:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
+nanoid@^3.1.23:
+  version "3.1.23"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
+  integrity sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw==
+
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -4722,6 +4727,15 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.17, postcss@^7.0.2
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+postcss@^8.2.15:
+  version "8.2.15"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
+  integrity sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==
+  dependencies:
+    colorette "^1.2.2"
+    nanoid "^3.1.23"
+    source-map "^0.6.1"
 
 posthtml-parser@^0.4.0, posthtml-parser@^0.4.1:
   version "0.4.2"

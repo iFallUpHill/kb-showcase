@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2",
     "cssnano": "^5.0.2",
     "lazysizes": "^5.3.2",
     "parcel-plugin-lazy": "git+https://github.com/iFallUpHill/parcel-plugin-lazy.git#master",
     "parcel-plugin-nuke-dist": "^1.0.1",
+    "postcss": "^8.2.15",
     "postcss-modules": "^4.0.0",
     "sass": "^1.32.12"
   }
