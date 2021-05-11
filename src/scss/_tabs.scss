@@ -43,6 +43,14 @@
     left: -2px;
   }
 
+
+  @media only screen and (max-width: 744px) {
+    display: inline-flex;
+    flex: 1 1 0;
+    justify-content: center;
+    margin-right: 0;
+  }
+
   span {
     white-space: nowrap;
     overflow: hidden;
@@ -50,19 +58,19 @@
     display: inline-block;
 
     // desktop
-    @media only screen and (min-width: 414px) and (max-width: 434px) {
+    @media only screen and (min-width: 415px) and (max-width: 444px) {
       max-width: 68px;
     }
-    @media only screen and (min-width: 390px) and (max-width: 413px) {
+    @media only screen and (min-width: 391px) and (max-width: 414px) {
       max-width: 60px;
     }
-    @media only screen and (min-width: 369px) and (max-width: 389px) {
+    @media only screen and (min-width: 371px) and (max-width: 390px) {
       max-width: 53px;
     }
-    @media only screen and (min-width: 342px) and (max-width: 368px) {
+    @media only screen and (min-width: 343px) and (max-width: 370px) {
       max-width: 44px;
     }
-    @media only screen and (max-width: 341px) {
+    @media only screen and (max-width: 342px) {
       max-width: 37px;
     }
 
@@ -84,7 +92,6 @@
     }
   }
 }
-
 
 .tabset > input:first-child:checked ~ .label-group > label:nth-of-type(1),
 .tabset > input:nth-child(2):checked ~ .label-group > label:nth-of-type(2),
@@ -116,4 +123,27 @@
   border-right: solid 2px #413f42;
   border-bottom: solid 2px #413f42;
   box-shadow: -1px -1px 0px #817c78 inset;
+}
+
+@media only screen and (max-width: 744px),
+       only screen and (max-device-width: 744px) {
+
+  .tabset .label-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tabset > input:not(:checked) ~ .label-group > label {
+      border-bottom: 2px solid transparent;
+  }
+
+  .tab-panel {
+    padding-top: 2em;
+  }
+
+  /* Special case for about tab */
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(7) {
+    padding-top: 1em;
+  }
 }
